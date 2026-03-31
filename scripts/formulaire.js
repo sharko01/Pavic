@@ -1,8 +1,8 @@
 
-const CallToAction = document.getElementById("call-to-action");
+const CallToAction = document.getElementById("paiement");
 
 
-CallToAction.addEventListener('click', (e)=>{
+CallToAction.addEventListener('submit', (e)=>{
     e.preventDefault();
     window.location.assign("./merci.html");
 })
