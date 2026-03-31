@@ -12,10 +12,25 @@ const load = async (id, url) => {
         console.log('error : ',error)
 
     }
+
+    if(id === '#header'){
+        const links = document.querySelectorAll('.navbar .nav-link');
+        const currentPath = window.location.pathname;
+
+        links.forEach(link => {
+            link.classList.remove('active');
+
+    
+            if (link.pathname === currentPath) {
+            link.classList.add('active');
+            }
+        });
+    }
 };
+
 
 
 document.addEventListener("DOMContentLoaded", () => {load('#header', './composants/header.html')});
 document.addEventListener("DOMContentLoaded", () => {load('#footer', './composants/footer.html')});
-// document.addEventListener("DOMContentLoaded", () => {load('#header', 'http://127.0.0.1:5500/vitrine/composants/header.html')});
-// document.addEventListener("DOMContentLoaded", () => {load('#footer', 'http://127.0.0.1:5500/vitrine/composants/footer.html')});
+
+
