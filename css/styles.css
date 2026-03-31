@@ -215,7 +215,7 @@ p {
 
 @media only screen and (max-width: 768px) {
   .hero-accueil {
-    height: 70vh;
+    min-height: 70vh;
   }
   .hero-accueil .img-hero {
     height: 50vh;
@@ -230,7 +230,7 @@ p {
     left: 0%;
   }
   .hero-accueil .filter-hero {
-    height: 70vh;
+    min-height: 70vh;
     background: #020024;
     background: linear-gradient(0deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 55%, rgba(0, 212, 255, 0) 100%);
     position: absolute;
