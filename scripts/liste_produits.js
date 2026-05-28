@@ -27,7 +27,7 @@ export const SAVON_CURCUMA = {
 export const SAVON_LESSIVE = {
     imageCarousel: ["./medias/images/doux_mains.jpg", "./medias/images/mon-savon.jpeg", "./medias/images/nature.webp", "./medias/images/mon-savon-peau-fraiche.jpeg","./medias/images/nettoyage_impecable.jpeg"],
     title: "SOAP-LESSIVE SAVON NATUREL QUI ILLUMINE VOS VETEMENTS",
-    prix: "4500CFA",
+    oldPrix: "4500CFA",
     promotion: "2500CFA",
     subtitle: "Enrichi en ingrédients aux vertus illuminatrices, il redonne la toute leur blancheur à vos vêtements",
 // pour des raisons de cohérence si qte est modifié ici il faudra aussi le modifier dans formulaire.js
