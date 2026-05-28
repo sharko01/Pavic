@@ -1,10 +1,10 @@
 const load = async (id, url) => {
     try{
-        response = await fetch(url);
+        const response = await fetch(url);
         if(!response.ok){
             throw new Error('Echec de telechargement du header')
         }
-        data = await response.text();
+        const data = await response.text();
         document.querySelector(id).innerHTML = data;
         
     }catch(error){
@@ -30,7 +30,15 @@ const load = async (id, url) => {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {load('#header', './composants/header.html')});
-document.addEventListener("DOMContentLoaded", () => {load('#footer', './composants/footer.html')});
+const main = async () => {
+    await load('#header', './composants/header.html');
+    await load('#footer', './composants/footer.html');
+    if(document.getElementById("whatsapp")){
+        await load('#whatsapp', './sections/whatsappButton.html')
+    }
+
+}
+
+main();
 
 

@@ -1,0 +1,98 @@
+
+<section class="container-fluid catalogue-description p-md-3 p-sm-0">
+    <div class="row row-cols-1 row-cols-md-3 p-md-3 p-sm-0">
+        <div class="col-md-2 col-lg-1 img-card-group align-items-center">
+            <!-- contenue injecter depuis carousel.js -->
+        </div>
+        <div class="col col-md-7 p-0 d-flex justify-content-center align-items-center">
+            <div class="img-group">
+                <div id="carouselIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <!-- contenue injecter depuis carousel.js -->
+                    </div>
+                    <div class="carousel-inner">
+                        <!-- contenue injecter depuis carousel.js -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+                        <span class="fs-1 text-dark fw-bold" aria-hidden="true"><i class="bi bi-arrow-bar-left"></i></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+                        <span class="fs-1 text-dark fw-bold" aria-hidden="true"><i class="bi bi-arrow-bar-right"></i></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-4 produit-description py-4">
+            <h2 class="pb-3 fw-bold" id="title"></h2>
+            <p id="subtitle"><!-- injecter depuis js--></p>
+            <div class="d-flex flex-row">
+                <p class="fs-3 fw-bold pe-3" id="prix_promotion"><!-- injecter depuis js--></p>
+                <p><s id="ancien_prix" class="fs-3 fw-bold text-grey"><!-- injecter depuis js--></s></p>
+            </div>
+                
+            <hr>
+            <div class="formulaire-achat">
+                <!-- <div class="quantite-dfn rounded-2 mb-4">
+                    <button class="fs-4 fw-bold rounded-start-2" disabled>-</button>
+                    <p class="text-center fs-4">1</p>
+                    <button class="fs-5 fw-bold rounded-end-2">+</button>
+                </div> -->
+
+                <form action="" class="" id="paiement">
+                    <p>Veuillez remplir le formulaire pour passer commande.</p>
+                    <div class="form-check d-flex w-100 justify-content-between align-items-center py-2 mb-2 check-btn">
+                        <div class="d-flex align-items-center px-2">
+                            <input class="form-check-input p-2" type="radio" name="radio" id="radioDefault1" required value="0">
+                            <div class="g-0 ms-3">
+                                <p class="mb-0" id="offre1_qte"><!-- injecter depuis js--></p>
+                                <p class="mt-1 mb-0 label" id="offre1_percent"><!-- injecter depuis js--></p>
+                            </div>
+                        </div>
+                        <p class="pe-3 fw-bold" id="offre1_prix"><!-- injecter depuis js--></p>
+                    </div>
+                    <div class="form-check d-flex w-100 justify-content-between align-items-center py-2 mb-2  check-btn">
+                        <div class="d-flex align-items-center px-2">
+                            <input class="form-check-input p-2" type="radio" name="radio" id="radioDefault2" required value="0">
+                            <div class="g-0 ms-3">
+                                <p class="mb-0" id="offre2_qte"><!-- injecter depuis js--></p>
+                                <p class="mt-1 mb-0 label" id="offre2_percent"><!-- injecter depuis js--></p>
+                            </div>
+                        </div>
+                        <p class="pe-3 fw-bold" id="offre2_prix"><!-- injecter depuis js--></p>
+                    </div>
+                    <div class="form-check d-flex w-100 justify-content-between align-items-center py-2 mb-2  check-btn">
+                        <div class="d-flex align-items-center px-2">
+                            <input class="form-check-input p-2" type="radio" name="radio" id="radioDefault3" required value="0">
+                            <div class="g-0 ms-3">
+                                <p class="mb-0" id="offre3_qte"><!-- injecter depuis js--></p>
+                                <p class="mt-1 mb-0 label" id="offre3_percent"><!-- injecter depuis js--></p>
+                            </div>
+                        </div>
+                        <p class="pe-3 fw-bold" id="offre3_prix"><!-- injecter depuis js--></p>
+                    </div>
+                    
+                    <div class="input-group flex-nowrap mb-2">
+                        <span class="input-group-text" id="name"><i class="bi bi-person-circle"></i></span>
+                        <input required type="text" class="form-control" placeholder="Christ TATI" aria-label="name" aria-describedby="name" name="nom">
+                    </div>
+                    <div class="input-group flex-nowrap mb-2">
+                        <span class="input-group-text" id="telephone"><i class="bi bi-telephone-fill"></i></span>
+                        <input required type="text" class="form-control" placeholder="063248793" aria-label="telephone" aria-describedby="addon-wrapping" name="phone">
+                    </div>
+                    <div class="input-group flex-nowrap mb-2">
+                        <span class="input-group-text" id="adresse"><i class="bi bi-house-fill"></i></span>
+                        <input required type="text" class="form-control" placeholder="12 Rue xxx Plateau" aria-label="adresse" aria-describedby="adresse" name="adresse">
+                    </div>
+                    <div class="input-group flex-nowrap mb-2">
+                        <span class="input-group-text" id="ville"><i class="bi bi-mailbox2"></i></span>
+                        <input required type="text" class="form-control" placeholder="Ex: Brazzaville" aria-label="ville" aria-describedby="ville" name="ville">
+                    </div>
+
+                    <button class="w-100 btn btn-dark mt-4" id="call-to-action" type="submit">Commandez maintenant - paiement à la livraison</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
